@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 01</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0 auto;
+        }
+        .wrapper {
+            width: 1280px;
+            min-height: 400px;
+            border: 1px solid #000;
+        }
+        header {
+            width: 100%;
+            height: 80px;
+            text-align: center;
+            line-height: 80px;
+            border-bottom: 1px solid #000;
+            color: rgb(116, 41, 66);
+            font-style: italic;
+            text-shadow: 10px 8px 2px rgba(216, 112, 147, 0.4);
+        }
+        nav {
+            width: 100%;
+            height: 50px;
+            border-bottom: 1px solid #000;
+            background-color: palevioletred;
+        }
+        nav > .menu {
+            width: 80%;
+            height: 100%;
+            vertical-align: middle;
+        }
+        .menu > li {
+            float: left;
+            width: calc(20% - 2px);
+            height: 100%;
+            line-height: 50px;
+            list-style-type: none;
+            text-align: center;
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+            position: relative;
+        }
+        .menu > li:first-child {
+            border-left: none;
+        }
+        .menu > li:last-child {
+            border-right: none;
+        }
+        .menu > li > a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .menu > li > a > img {
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .menu > li > input[type="text"] {
+            width: 70%;
+            height: 20px;
+            border: 1px solid #000;
+        }
+        .menu > li > input[type="button"] {
+            width: 20%;
+            height: 20px;
+            border: 1px solid #000;
+            background-color: #fff;
+        }
+        .content {
+            width: 100%;
+            min-height: 620px;
+            border-bottom: 1px solid #000;
+            position: relative;
+            margin: 0;
+            margin-top: 10px;
+        }
+        .left-aside {
+            width: 20%;
+            height: 620px;
+            float: left;
+        }
+        .left-aside > ul > li {
+            list-style-type: none;
+            background-color: pink;
+            line-height: 30px;
+            border-radius: 40px;
+            text-indent: 20px;
+            margin-top: 10px;
+        }
+        .aside_background {
+            margin-top: 20px;
+            max-width: 230px;
+            height: 150px;
+            border-radius: 50%;
+            box-shadow: 10px 20px 20px #000;
+        }
+        .center {
+            width: calc(50% - 20px);
+            min-height: 620px;
+            float: left;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .center > h2 {
+            text-indent: 20px;
+            background-color: palevioletred;
+            color: rgb(116, 41, 66);
+            width: 60%;
+            font-size: 24px;
+            letter-spacing: 14px;
+        }
+        .center > ul > li {
+            margin-left: 30px;
+        }
+        .center > a {
+            display: block;
+            margin-bottom: 20px;
+            color: red;
+            font-weight: bold;
+        }
+        .center > form > input[type="text"] {
+            width: 45%;
+            height: 36px;
+            margin: 10px;
+        }
+        .center > form > select {
+            width: 46%;
+            height: 36px;
+            margin: 10px;
+        }
+        .center > form > textarea {
+            width: calc(90% + 30px);
+            height: 40px;
+            margin: 10px;
+        }
+        .center > form > input[type="submit"]
+        , .center > form > input[type="reset"] {
+            width: 10%;
+            height: 30px;
+        }
+        .center > form > input[type="submit"]{
+            margin-left: 10px;
+        }
+        .center > form > input[type="radio"] {
+            margin-left: 10px;
+        }
+        .right-aside {
+            background-color: black;
+            color: #fff;
+            width: 30%;
+            float: left;
+        }
+        .right-aside > .container {
+            width: 100%;
+            height: 500px;
+        }
+        .container > .blog {
+            width: calc(100% - 60px);
+            height: calc(50% - 60px);
+            border-bottom: 1px solid #fff;
+            margin-left: 30px;
+            margin-right: 30px;
+            margin-top: 20px;
+        }
+        .right-aside_img {
+            width: 100%;
+            height: 100px;
+        }
+        .blog > article > p {
+            display: block;
+            height: 50px;
+            font-size: 13px;
+        }
+        .blog > article > p > a {
+            display: inline;
+            height: 50px;
+            color: palevioletred;
+            font-size: 13px;
+        }
+        footer {
+            width: 100%;
+            height: 100px;
+            line-height: 100px;
+            font-size: 24px;
+            font-weight: bold;
+            font-style: italic;
+            text-align: center;
+            color: #fff;
+            background-color: palevioletred;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header><h1>EXAMPLE CAFE MENU</h1></header>
+        <nav>
+            <ul class="menu">
+                <li><a href="#"><img src="../img/icons8-home-50.png" alt=""></a></li>
+                <li><a href="#">STARTER</a></li>
+                <li><a href="#">MAIN COURSES</a></li>
+                <li><a href="#">DESSERTS</a></li>
+                <li>
+                    <input type="text" title="link">
+                    <input type="button" value="Go">
+                </li>
+            </ul>
+        </nav>
+        <div class="content">
+            <aside class="left-aside">
+                <ul>
+                    <li>Cafe Latte</li>
+                    <li>Cafe Latte</li>
+                    <li>Cafe Latte</li>
+                    <li>Cafe Latte</li>
+                    <li>Cafe Latte</li>
+                </ul>
+                <img src="../img/company.png" alt="" class="aside_background">
+            </aside>
+            <section class="center">
+                <h2>Starter</h2>
+                <ul>
+                    <li>Spinach and Ricotta Roulade (<u>v</u>)</li>
+                    <li>Beef Tournados with Mustard and Dill Sause</li>
+                    <li>Roast Chicken Salad</li>
+                    <li>Icelandic Cod with Parsley Sauce</li>
+                    <li>Mushroom Wellington (<u>v</u>)</li>
+                </ul>
+                <a href="#top">Back to top</a>
+                <h2>Desserts</h2>
+                <ul>
+                    <li>Lemon Sorbet (<u>v</u>)</li>
+                    <li>Chocolate Mud Pie (<u>v</u>)</li>
+                    <li>Pecan Pie (<u>v</u>)</li>
+                    <li>Selection of Fine Cheeses from Around the World</li>
+                </ul>
+                <a href="#top">Back to top</a>
+                <h2>INFORMATION</h2>
+                <form action="post">
+                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Last Name">
+                    <input type="text" placeholder="Email">
+                    <input type="text" placeholder="Telephone">
+                    <select name="countries" id="coutries">
+                        <option value="usa">USA</option>
+                        <option value="vietnam">Việt Nam</option>
+                    </select>
+                    <input type="radio" id="Vietnamese">
+                    <label for="Vietnamese">Vietnamese</label>
+                    <input type="radio" id="Foreigner">
+                    <label for="Foreigner">Foreigner</label>
+                    <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Comment"></textarea>
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Cancel">
+                </form>
+            </section>
+            <aside class="right-aside">
+                <h2>Events</h2>
+                <div class="container">
+                    <section class="blog">
+                        <h3>Regular Meetings</h3>
+                        <img src="../img/meeting.png" alt="" class="right-aside_img">
+                        <article>
+                            <p>Host your regular team meetings or activities in the comfort of your own private room. <a href="#">Read more...</a></p>
+                        </article>
+                    </section>
+                    <section class="blog">
+                        <h3>Product Launchers</h3>
+                        <img src="../img/launch.png" alt="" class="right-aside_img">
+                        <article>
+                            <p>Launch your product with ease in a space that truly fits its image. <a href="#">Read more...</a></p>
+                        </article>
+                    </section>
+                </div>
+            </aside>
+        </div>
+        <footer>
+            ABC Company &copy; - 12345678 - abccoffee@gmail.com
+        </footer>
+    </div>
+</body>
+</html>
