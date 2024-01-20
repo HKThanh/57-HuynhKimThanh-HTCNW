@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrapbooks Home Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .wrapper {
+            width: 1280px;
+            margin: 0 auto;
+            border: 1px solid black;
+        }
+        header {
+            width: calc(100% - 50px);
+            height: 126px;
+            border-bottom: 4px solid rgb(240, 191, 101);
+            margin-right: 30px;
+        }
+        img {
+            height: 100%;
+            width: auto;
+            float: right;
+        }
+        .links {
+            width: 25%;
+            height: 979px;
+            background: url(../img/back.jpg) repeat-y;
+            background-size: 90%;
+            float: left;
+            z-index: -1;
+        }
+        .links ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .links ul li {
+            padding: 10px;
+            width: 75%;
+            border-bottom: 3px dashed rgb(173, 118, 34);
+        }
+        .links ul li a {
+            text-decoration: none;
+            color: rgb(88, 46, 155);
+            font-size: 24px;
+            font-weight: 600;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .content {
+            padding-top: 30px;
+            padding-right: 30px;
+            height: 979px;
+        }
+        .content section {
+            width: calc(75% - 10px);
+            float: left;
+            margin-bottom: 30px;
+        }
+        .content section h1 {
+            font-size: 32px;
+            color: rgb(240, 191, 101);
+            margin-bottom: 30px;
+        }
+        .content section img {
+            float: left;
+            width: 80%;
+            height: 800px;
+        }
+        .content article {
+            position: absolute;
+            display: block;
+            width: 240px;
+            background-color: rgb(238, 230, 217);
+            color: black;
+            padding: 10px;
+            border-top: 3px solid gray;
+            border-left: 3px solid gray;
+            border-right: 3px solid rgb(204, 203, 203);
+            border-bottom: 3px solid rgb(204, 203, 203);
+            z-index: 10;
+        }
+        .content article:nth-child(1) {
+            top: 20%;
+            left: 66%;
+        }
+        .content article:nth-child(2) {
+            top: 50%;
+            left: 30%;
+        }
+        .content article:nth-child(3) {
+            top: 80%;
+            left: 64%;
+        }
+        hr {
+            border: 3px solid rgb(240, 191, 101);
+        }
+        address {
+            width: 100%;
+            font-size: 18px;
+            color: rgb(240, 191, 101);
+            height: 40px;
+            text-align: center;
+            font-style: normal;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <img src="../img/scraps.jpg" alt="">
+        </header>
+        <div class="links">
+            <ul>
+                <li><a href="../html/home.html">Home</a></li>
+                <li><a href="../html/start.html">Getting Started</a></li>
+                <li><a href="#">Scrapbooking Tips</a></li>
+                <li><a href="#">Supply List</a></li>
+                <li><a href="#">Online Classes</a></li>
+                <li><a href="#">Sample Pages</a></li>
+                <li><a href="#">Online Store</a></li>
+                <li><a href="#">Shopping Cart</a></li>
+                <li><a href="#">Checkout</a></li>
+                <li><a href="#">Your Account</a></li>
+                <li><a href="#">Order Status</a></li>
+                <li><a href="#">Wish List</a></li>
+                <li><a href="#">Customer Service</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <article>Cascading Style Sheets (CSS) is a fantastic tool to add layout to your websites. It can save you a lot of time and it enables you to design websites in a completely new way. CSS is a must for anyone working with web design.</article>
+            <article>This tutorial will get you started with CSS in just a few hours. It is easy to understand and it will teach you all the sophisticated techniques.</article>
+            <article>Learning CSS is fun. As you go along through the tutorial, remember to take enough time to properly experiment with what you learn in each lesson.</article>
+            <section>
+                <h1>Samples from Online Scrapbooks</h1>
+                <img src="../img/sample.jpg" alt="">
+            </section>
+            <hr>
+            <address>
+                ONLINE SCRAPBOOKS 212 SUNSET DRIVE RICHMOND, KY 40475 (859) 555-5555 (859) 555-8100
+            </address>
+        </div>
+    </div>
+</body>
+</html>
