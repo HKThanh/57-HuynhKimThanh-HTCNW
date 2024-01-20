@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 02</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .wrapper {
+            width: 1280px;
+            margin: 0 auto;
+            border: 1px solid #000;
+        }
+        header {
+            background-color: #f2f2f2;
+            background: url(../img/background.png);
+            padding: 20px;
+            height: 100px;
+        }
+        header img {
+            width: 100px;
+            height: 100px;
+            float: left;
+        }
+        header p {
+            height: 40px;
+            display: block;
+            font-size: 30px;
+            font-weight: bold;
+            color: #fff;
+            margin-left: 30px;
+        }
+        header > p:last-child {
+            font-size: 24px;
+        }
+        nav {
+            background-color: #9e9e9e;
+            height: 50px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            float: left;
+            width: 12%;
+            text-align: center;
+            line-height: 50px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 24px;
+        }
+        nav ul li a:hover {
+            color: #000;
+        }
+        section {
+            width: calc(70% - 40px);
+            height: 600px;
+            float: left;
+            padding: 20px;
+        }
+        section article {
+            width: calc(100% - 40px);
+            height: 45%;
+            float: left;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #000;
+        }
+        section article .food_image {
+            width: 40%;
+            height: 100%;
+            float: left;
+        }
+        section article h2 {
+            font-size: 36px;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        section article p {
+            font-size: 24px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        section article p:nth-child(2) {
+            margin-top: 10px;
+        }
+        section article p:nth-child(3) {
+            margin-top: 6px;
+            margin-bottom: 12px;
+            font-size: 28px;
+            color: rgb(230, 41, 104);
+        }
+        aside {
+            width: calc(30% - 2px);
+            float: left;
+            border-left: 2px solid rgba(0, 0, 0, 0.2);
+        }
+
+        aside section {
+            width: calc(100% - 40px);
+            margin-bottom: 20px;
+            height: 300px;
+        }
+
+        aside section h2 {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 32px;
+            font-weight: bold;
+            color: red;
+        }
+
+        aside section ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        aside section ul li {
+            margin-top: 20px;
+            margin-left: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #000;
+        }
+
+        aside section ul li a {
+            text-decoration: none;
+            color: red;
+            font-size: 26px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        aside section p {
+            font-size: 24px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        aside section p:nth-child(2) {
+            margin-top: 30px;
+        }
+
+        aside section ul li a:hover {
+            color: #9e9e9e;
+        }
+
+        footer {
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            clear: both;
+            background-color: #9e9e9e;
+            height: 50px;
+            font-size: 20px;
+            font-weight: bold;
+            text-indent: 20px;
+            color: #fff;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <img src="../img/logo.png" alt="">
+            <p>YOKO'S KITCHEN</p>
+            <p>JAPANESE COOKING CLASSES</p>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">classes</a></li>
+                <li><a href="#">catering</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+        <section>
+            <article>
+                <div class="food_image">
+                    <img src="../img/teriyaki.jpg" alt="">
+                    <p>Bok Choi</p>
+                </div>
+                <h2>Japanese Vegetarian</h2>
+                <p>Five week course in London</p>
+                <p>A five week introduction to traditional Japanese vegetarian meals, teaching you a selection of rice and noodle dishes.</p>
+            </article>
+            <article>
+                <div class="food_image">
+                    <img src="../img/teriyaki.jpg" alt="">
+                    <p>Teriyaki Sauce</p>
+                </div>
+                <h2>Sauces Masterclass</h2>
+                <p>One day workshop</p>
+                <p>An intensive one-day course looking at how to create the most delicious sauces for use in a range of Japanese cookery.</p>
+            </article>
+        </section>
+        <aside>
+            <section>
+                <h2>Popular Recipies</h2>
+                <ul>
+                    <li><a href="#">Yakitori (grilled chicken)</a></li>
+                    <li><a href="#">Tsukune (minced chicken patties)</a></li>
+                    <li><a href="#">Okonomiyaki (savory pancakes)</a></li>
+                    <li><a href="#">Mizutaki (chicken stew)</a></li>
+                </ul>
+            </section>
+            <section>
+                <h2>Contact</h2>
+                <p>Yoko's Kitchen</p>
+                <p>27 Redchurch Street</p>
+                <p>Shoreditch</p>
+                <p>London E2 7DP</p>
+            </section>
+        </aside>
+        <footer>
+            &copy; 2011 Yoko's Kitchen
+        </footer>
+    </div>
+</body>
+</html>
