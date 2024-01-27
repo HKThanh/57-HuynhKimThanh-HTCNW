@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 06</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        .wrapper {
+            margin: 0 auto;
+            width: 900px;
+        }
+        
+        .form_a {
+            width: 100%;
+            border: 1px solid #000;
+            padding: 40px;
+            background-color: rgb(119, 119, 255);
+        }
+        
+        .form_a h1 {
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        .form_a p {
+            text-align: center;
+            font-size: 20px;
+        }
+        
+        .name {
+            width: 100%;
+            margin-top: 10px;
+        }
+        
+        .name label:first-child {
+            margin-right: 180px;
+        }
+        
+        .name input {
+            height: 30px;
+            border: 1px solid #000;
+        }
+        
+        .address {
+            width: 100%;
+        }
+        
+        .address label {
+            margin-top: 10px;
+            margin-right: 175px;
+        }
+        
+        .address input {
+            width: 240px;
+            height: 30px;
+            border: 1px solid #000;
+            margin-right: 240px;
+            margin-top: 10px;
+        }
+        
+        .cities {
+            width: 100%;
+            margin-top: 10px;
+        }
+        
+        .cities label:first-child {
+            margin-right: 236px;
+        }
+        
+        .cities input {
+            width: 200px;
+            height: 30px;
+            border: 1px solid #000;
+        }
+        
+        .cities input:last-child {
+            width: 40px;
+        }
+        
+        .cities input:nth-child(4) {
+            width: 80px;
+        }
+        
+        .country {
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .country label {
+            margin-right: 203px;
+        }
+        
+        .country input {
+            height: 30px;
+            border: 1px solid #000;
+        }
+        
+        .product {
+            margin-top: 10px;
+        }
+        
+        .product label {
+            margin-right: 204px;
+        }
+        
+        .product select {
+            height: 30px;
+            border: 1px solid #000;
+        }
+        
+        .dates {
+            margin-top: 10px;
+        }
+        
+        .dates label {
+            margin-right: 138px;
+        }
+        
+        .dates input,
+        .serial input {
+            height: 30px;
+            border: 1px solid #000;
+        }
+        
+        .serial {
+            margin-top: 10px;
+        }
+        
+        .serial label {
+            margin-right: 200px;
+        }
+        
+        .used {
+            margin-top: 10px;
+        }
+        
+        .used label:first-child {
+            margin-right: 200px;
+        }
+        
+        .options {
+            display: inline-block;
+            width: 400px;
+        }
+        
+        .options label {
+            margin-right: 60px;
+        }
+        
+        .options label:nth-child(6) {
+            margin-right: 37px;
+        }
+        
+        .options label:nth-last-child(3) {
+            margin-right: 10px;
+        }
+        
+        .system {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .system label {
+            margin-right: 40px;
+        }
+        
+        .comments {
+            margin-top: 10px;
+        }
+        
+        .comments label {
+            margin-right: 172px;
+        }
+        
+        .buttons {
+            display: flex;
+            width: 100%;
+            margin-top: 10px;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="form_a">
+            <form action="post">
+                <h1>Registration Form</h1>
+                <p>Register your Jackson Electionics product here</p>
+
+                <div class="name">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" name="firstName" id="firstName">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" name="lastName" id="lastName">
+                </div>
+                <div class="address">
+                    <label for="address1">Address #1:</label>
+                    <input type="text" name="address1" id="address1">
+                    <label for="address2">Address #2:</label>
+                    <input type="text" name="address2" id="address2">
+                </div>
+                <div class="cities">
+                    <label for="city">City:</label>
+                    <input type="text" name="city" id="city">
+                    <label for="state">State:</label>
+                    <input type="text" name="state" id="state">
+                    <label for="zip">Zip:</label>
+                    <input type="text" name="zip" id="zip">
+                </div>
+                <div class="country">
+                    <label for="country">Country:</label>
+                    <input type="text" name="country" id="country" placeholder="United States">
+                </div>
+                <hr>
+                <div class="product">
+                    <label for="products">Product:</label>
+                    <select name="product" id="product">
+                        <option value="scanmaster">ScanMaster</option>
+                    </select>
+                </div>
+                <div class="dates">
+                    <label for="date">Date purchased:</label>
+                    <input type="text" name="date" id="date">
+                </div>
+                <div class="serial">
+                    <label for="serial">Serial #:</label>
+                    <input type="text" name="serial" id="serial">
+                </div>
+                <div class="used">
+                    <label for="">Used for:</label>
+                    <div class="options">
+                        <input type="radio" name="home" id="home" value="Home">
+                        <label for="home">Home</label>
+                        <input type="radio" name="edu" id="edu" value="educational">
+                        <label for="edu">Educational Institution</label>
+                        <input type="radio" name="Business" id="business" value="business">
+                        <label for="business">Business</label>
+                        <input type="radio" name="government" id="government" value="government">
+                        <label for="government">Government</label>
+                        <input type="radio" name="other" id="other" value="other">
+                        <label for="other">Other</label>
+                    </div>
+                </div>
+
+                <div class="system">
+                    <label for="">System (check all that apply)</label>
+                    <input type="checkbox" name="" id="windows" value="windows">
+                    <label for="windows" class="cks">Windows</label>
+                    <input type="checkbox" name="" id="unix" value="UNIX">
+                    <label for="unix" class="cks">UNIX</label>
+                    <input type="checkbox" name="" id="macintosh" value="Macintosh">
+                    <label for="macintosh" class="cks">Macintosh</label>
+                    <input type="checkbox" name="" id="other" value="Other">
+                    <label for="other" class="cks">Other</label>
+                </div>
+                <hr>
+                <div class="comments">
+                    <label for="comments">Comments?:</label>
+                    <textarea name="comments" id="comments" cols="70" rows="10"></textarea>
+                </div>
+                <div class="buttons">
+                    <input type="submit" value="Click to register">
+                    <input type="reset" value="Click to cancel">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
