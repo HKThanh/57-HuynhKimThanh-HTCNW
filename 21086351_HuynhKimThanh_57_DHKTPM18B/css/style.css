@@ -1,0 +1,168 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 11px;
+}
+
+.wrapper {
+    width: 800px;
+    border: 2px solid rgba(184, 183, 183, 0.3);
+    height: 520px;
+}
+
+nav {
+    width: calc(20% - 10px);
+    background-color: #800080;
+    padding: 10px;
+    margin-left: 10px;
+    float: left;
+}
+
+ul {
+    list-style-type: none;
+    padding-bottom: 16px;
+}
+
+ul li {
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 2px solid white;
+    text-align: right;
+}
+
+ul li:first-child {
+    height: 50px;
+    line-height: 50px;
+    border-bottom: none;
+}
+
+ul li h1 {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+ul li:hover a,
+ul li:hover {
+    color: yellow;
+    border-bottom-color: red;
+}
+
+ul li:hover:last-child {
+    border-bottom-color: white;
+}
+
+ul li:last-child {
+    height: 100px;
+    text-align: right;
+}
+
+ul li input,
+select {
+    width: 100%;
+    height: 20px;
+}
+
+ul li input:last-child {
+    height: 26px;
+    width: 60px;
+}
+
+.header1,
+.header2 {
+    width: 80%;
+    float: right;
+    padding: 10px;
+    padding-left: 30px;
+    height: 100px;
+}
+
+.header1 div {
+    float: right;
+    width: 140px;
+    height: 100%;
+    background-color: #800080;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px;
+    padding-top: 0;
+}
+
+.header1 img {
+    width: 54%;
+    height: 100%;
+}
+
+.header2 img {
+    height: 100%;
+    width: 100%;
+}
+
+section {
+    width: 80%;
+    float: right;
+    padding: 10px;
+    padding-left: 30px;
+}
+
+section img {
+    float: left;
+    width: 360px;
+    height: 160px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.title {
+    text-align: center;
+    border-top: 2px solid green;
+    border-bottom: 2px solid green;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+section .title h1 {
+    font-size: 20px;
+    margin-bottom: 14px;
+    color: #800080;
+}
+
+section .title p {
+    text-align: center;
+    color: gray;
+}
+
+section p {
+    margin-top: 20px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+section a {
+    display: block;
+    text-align: right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: blue;
+}
+
+footer {
+    width: calc(80% - 40px);
+    float: right;
+    text-align: center;
+    line-height: 1.5;
+    border-top: 2px solid green;
+    border-bottom: 2px solid green;
+    margin-right: 10px;
+    margin-left: 30px;
+    color: #800080;
+}
