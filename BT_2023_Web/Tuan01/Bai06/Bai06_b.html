@@ -5,13 +5,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bai 06 - b</title>
+    <style>
+        * {
+            margin: 0 auto;
+            padding: 0;
+        }
+        
+        .wrapper {
+            width: 800px;
+            border: 1px solid black;
+            padding: 10px;
+        }
+        
+        form h1 {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: inline-block;
+            margin-top: 10px;
+            width: 24%;
+            padding-left: 20px;
+        }
+        
+        legend {
+            margin-left: 20px;
+        }
+        
+        input[type="text"],
+        textarea {
+            width: 70%;
+            margin-top: 10px;
+        }
+        
+        select {
+            width: 150px;
+            margin-right: 300px;
+        }
+        
+        input[type="checkbox"] {
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 
 <body>
     <div class="wrapper">
         <form action="post" class="form_b">
             <h1>Contact Us</h1>
-
+            <fieldset>
+                <legend>Your message:</legend>
+                <label for="des">To</label>
+                <input type="text" name="des" id="des">
+                <label for="mail">Your email</label>
+                <input type="text" name="mail" id="mail">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                <label for="file">Attach File</label>
+                <input type="file" value="Choose File" id="file">
+            </fieldset>
+            <fieldset>
+                <legend>How you found us:</legend>
+                <label for="ways">How did you hear of us</label>
+                <select name="ways" id="ways">
+                    <option value="google">Google</option>
+                    <option value="friend">Friend</option>
+                    <option value="advert">Advert</option>
+                    <option value="other">Other</option>
+                </select>
+                <label for="letter">Newsletter</label>
+                <input type="checkbox" name="letter" id="letter"> Ensure this box is checked if you would like to receive email updates
+            </fieldset>
+            <input type="submit" value="Send message">
         </form>
     </div>
 </body>
