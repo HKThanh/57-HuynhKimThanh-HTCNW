@@ -1,0 +1,167 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 1089px;
+    border: 1px solid #000;
+    background-image: linear-gradient(to bottom, #89e3ff, #6574fa);
+}
+
+header {
+    height: 70px;
+    width: 100%;
+    border-bottom: 6px dotted #000;
+}
+
+.menu {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    position: relative;
+}
+
+.menu li {
+    height: 100%;
+    width: 100px;
+    list-style: none;
+    position: absolute;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    line-height: 70px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.menu li:nth-child(2) {
+    left: 100px;
+}
+
+.menu li:nth-child(3) {
+    left: 200px;
+}
+
+.menu li:nth-child(4) {
+    left: 300px;
+}
+
+.menu li:nth-child(5) {
+    left: 400px;
+}
+
+.menu li:nth-child(6) {
+    width: 240px;
+    right: 0;
+    text-align: center;
+}
+
+.menu h1 {
+    line-height: 70px;
+    color: white;
+    text-shadow: blue 2px 2px 10px;
+}
+
+.content {
+    height: 500px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    padding-top: 20px;
+}
+
+.section {
+    height: 100%;
+    width: 50%;
+}
+
+.section1 {
+    float: left;
+    padding-left: 10px;
+}
+
+.section1 h2 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.section1 p {
+    text-align: justify;
+    padding-right: 20px;
+    color: white;
+}
+
+.section1 form {
+    width: 85%;
+    margin-top: 10px;
+}
+
+.section1 form label {
+    display: inline-block;
+    width: 45%;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.section1 form input {
+    display: inline-block;
+    width: 53%;
+    height: 26px;
+    border-radius: 4px;
+}
+
+.section1 form select {
+    height: 26px;
+    width: 60px;
+    border-radius: 4px;
+}
+
+.section1 form textarea {
+    border-radius: 4px;
+}
+
+.section1 form input[type="submit"],
+.section1 form input[type="reset"] {
+    width: 60px;
+    border: 2px dotted #000;
+}
+
+.buttons {
+    padding-left: 210px;
+}
+
+.section2 {
+    float: right;
+}
+
+.section2 img {
+    width: 90%;
+}
+
+.section2 article h3 {
+    margin-top: 20px;
+    font-size: 32px;
+    text-indent: 60px;
+    color: blue;
+    text-shadow: 4px 4px 2px blue;
+}
+
+.section2 article p {
+    text-indent: 70px;
+    color: blue;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+footer {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 6px dotted #000;
+    color: white;
+    line-height: 1.5;
+}
