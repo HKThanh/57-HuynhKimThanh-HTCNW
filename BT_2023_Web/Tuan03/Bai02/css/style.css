@@ -1,0 +1,222 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 1089px;
+    border: 1px solid #000;
+}
+
+header {
+    height: 100px;
+    width: 100%;
+    position: relative;
+    background-color: #294E79;
+}
+
+header img {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+header .logo_name {
+    position: absolute;
+    top: 50%;
+    left: 90px;
+    transform: translateY(-50%);
+    color: white;
+}
+
+header .menu {
+    list-style: none;
+}
+
+header .menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header .menu li {
+    background-color: rgb(76, 116, 189);
+    display: inline-block;
+    height: 50px;
+    width: 100px;
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    right: 0;
+    bottom: 0;
+}
+
+header .menu li:nth-child(1) {
+    width: 100px;
+    right: 560px;
+}
+
+header .menu li:nth-child(2) {
+    width: 120px;
+    right: 430px;
+}
+
+header .menu li:nth-child(3) {
+    width: 120px;
+    right: 290px;
+}
+
+header .menu li:nth-child(4) {
+    width: 150px;
+    right: 120px;
+}
+
+header form {
+    position: absolute;
+    top: 6px;
+    right: 0;
+}
+
+header form input[type="text"] {
+    height: 24px;
+    width: 200px;
+    border: none;
+    background-color: #1f3a58;
+}
+
+header form input[type="text"]::placeholder {
+    color: white;
+}
+
+header form input[type="submit"] {
+    height: 24px;
+    width: 40px;
+    background-color: #1f3a58;
+    border: none;
+    color: white;
+}
+
+.content {
+    width: 100%;
+    height: 600px;
+    padding: 20px 10px;
+}
+
+hr {
+    border: 1px dotted #000;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+section {
+    width: 65%;
+    height: 500px;
+    float: left;
+}
+
+.contact {
+    height: 100%;
+    width: 60%;
+    float: left;
+}
+
+.contact p {
+    text-align: justify;
+    font-style: italic;
+    text-shadow: 4px 4px 6px green;
+    color: coral;
+    margin-bottom: 10px;
+}
+
+.group {
+    width: 50%;
+    margin-bottom: 10px;
+    float: left;
+}
+
+.contact form label {
+    width: 50%;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.contact form input[type="text"] {
+    width: 90%;
+    height: 26px;
+}
+
+.contact form input[type="submit"],
+.contact form input[type="reset"] {
+    width: 70px;
+    height: 30px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.info {
+    width: 40%;
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.info h2 {
+    font-size: 20px;
+}
+
+.info ul {
+    list-style: none;
+}
+
+.info ul li {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+aside {
+    width: 35%;
+    height: 500px;
+    padding: 30px;
+    float: right;
+}
+
+aside img {
+    border: 1px solid #000;
+    padding: 6px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+aside p {
+    text-align: justify;
+    line-height: 1.5;
+}
+
+aside a {
+    display: block;
+    width: 100%;
+    text-align: right;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #5555f5;
+    text-decoration: none;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: #294E79;
+    color: white;
+    text-indent: 10px;
+    line-height: 50px;
+}
+
+footer p {
+    height: 100%;
+}
+
+footer span {
+    color: cornflowerblue;
+}
