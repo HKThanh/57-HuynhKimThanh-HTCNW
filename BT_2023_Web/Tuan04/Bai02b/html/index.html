@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 2b</title>
+    <style>
+        .wrapper {
+            width: 400px;
+            margin: 0 auto;
+            border: 1px solid #000;
+        }
+        
+        .cal tr td label {
+            display: block;
+            width: 100%;
+            text-align: right;
+        }
+        
+        .cal tr:nth-child(4) td:nth-child(1) {
+            text-align: right;
+        }
+        
+        span {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <table class="cal">
+            <tr>
+                <th colspan="2">PHÉP TÍNH CƠ BẢN</th>
+            </tr>
+            <tr>
+                <td><label for="so1">Nhập số thứ 1</label></td>
+                <td><input type="text" name="" id="so1"><span id="error1">(*)</span></td>
+            </tr>
+            <tr>
+                <td><label for="so2">Nhập số thứ 2</label></td>
+                <td><input type="text" name="" id="so2"><span id="error2">(*)</span></td>
+            </tr>
+            <tr>
+                <td><button onclick="add();">Cong</button><button onclick="subtract();">Tru</button></td>
+                <td><button onclick="multiply();">Nhan</button><button onclick="divide();">Chia</button></td>
+            </tr>
+            <tr>
+                <td><label for="kq">Kết quả</label></td>
+                <td><input type="text" name="" id="kq"></td>
+            </tr>
+        </table>
+        <script src="../js/calculator.js"></script>
+    </div>
+</body>
+
+</html>
