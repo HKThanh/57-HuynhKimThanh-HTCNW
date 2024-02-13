@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 2d</title>
+    <style>
+        * {
+            margin: 0 auto;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .wrapper {
+            width: 600px;
+            border: 1px solid #000;
+            padding: 10px;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: inline-block;
+            width: 40%;
+        }
+        
+        .radLabel {
+            display: inline-block;
+            width: 20%;
+        }
+        
+        input[type="text"] {
+            width: 50%;
+            margin-bottom: 10px;
+        }
+        
+        input[type="radio"] {
+            margin-bottom: 10px;
+        }
+        
+        select {
+            width: 50%;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        
+        input[type="submit"],
+        input[type="reset"] {
+            width: 100px;
+            height: 30px;
+            margin-top: 10px;
+            padding: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>FORM ĐỊNH DẠNG</h1>
+        <label for="txtHoTen">Họ và tên</label>
+        <input type="text" name="" id="txtHoTen">
+        <label for="">Chọn</label>
+        <input type="radio" name="kindOfObjects" id="radBackground">
+        <label for="radBackground" class="radLabel">Background</label>
+        <input type="radio" name="kindOfObjects" id="radFontColor">
+        <label for="radFontColor" class="radLabel">Font</label>
+        <label for="colors">Chọn màu</label>
+        <select name="colorChoices" id="colors">
+            <option value="none">Chọn màu...</option>
+            <option value="red">Đỏ</option>
+            <option value="blue">Xanh dương</option>
+            <option value="green">Xanh lá</option>
+        </select>
+        <input type="submit" value="Đổi màu" id="btnChangeColor">
+        <input type="reset" value="Cancel" id="btnCancel">
+        <p id="textZone">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati placeat explicabo atque aut debitis soluta ea velit, optio minus, illo dolores inventore harum odit, asperiores quo eius laudantium nihil dolorem?</p>
+    </div>
+
+    <script src="../js/changeColor.js"></script>
+</body>
+
+</html>
