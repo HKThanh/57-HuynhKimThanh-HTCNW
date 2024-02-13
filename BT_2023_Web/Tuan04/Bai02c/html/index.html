@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 02c</title>
+    <style>
+        * {
+            margin: 0 auto;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .wrapper {
+            width: 600px;
+            border: 1px solid #000;
+            padding: 10px;
+        }
+        
+        input[type="checkbox"] {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        
+        span {
+            color: red;
+        }
+        
+        button {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <p>Chọn loại cafe:</p>
+        <input type="checkbox" name="TN" id="trungnguyen" value="Trung Nguyen">
+        <label for="trungnguyen">Trung Nguyen</label>
+        <br>
+        <input type="checkbox" name="MK" id="mekong" value="Me Kong">
+        <label for="mekong">Me Kong</label>
+        <br>
+        <input type="checkbox" name="NL" id="newlife" value="New Life">
+        <label for="newlife">New Life</label>
+        <br>
+        <input type="checkbox" name="OB" id="oceanblue" value="Ocean Blue">
+        <label for="oceanblue">Ocean Blue</label>
+        <br>
+        <input type="checkbox" name="BS" id="bluespace" value="Blue Space">
+        <label for="bluespace">Blue Space</label>
+        <br>
+        <input type="checkbox" name="W" id="windows" value="Windows">
+        <label for="windows">Windows</label>
+        <br>
+        <button id="btnResults">Chọn</button>
+        <p>Bạn chọn cafe: <span id="results"></span></p>
+    </div>
+    <script src="../js/checkbox.js"></script>
+</body>
+
+</html>
