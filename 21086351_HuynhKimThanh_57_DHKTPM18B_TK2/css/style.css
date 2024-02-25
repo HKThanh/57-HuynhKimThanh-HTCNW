@@ -81,7 +81,7 @@ nav ul li:nth-child(5) form input[type="submit"] {
 }
 
 nav ul li a:hover {
-    color: blue;
+    color: yellow;
 }
 
 header {
@@ -196,6 +196,8 @@ footer {
     clear: both;
     width: 100%;
     background-color: rgb(178, 184, 106);
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 footer p {
