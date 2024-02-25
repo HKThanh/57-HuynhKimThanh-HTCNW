@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">PRODUCTS</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li>
+                    <form action="" method="get">
+                        <label for="search">SEARCH:</label>
+                        <input type="text" name="search" id="search" placeholder="Search here...">
+                        <input type="submit" value="Go">
+                    </form>
+                </li>
+            </ul>
+        </nav>
+        <header>
+            <img src="../hinh/header.jpg" alt="">
+        </header>
+        <section>
+            <h2>Introduction - Contact</h2>
+            <div class="content">
+                <b>F</b>lowering plants are plants which produce flowers as their reproductive structures. They come in a great variety of shapes and sizes and include grasses, sedges, rushes, many trees, as well as familiar plants like daffodils and
+                daisies. Flowers often, though not always, have brightly coloured petals. The flowers conceal inside them the female ovules which will be fertilised by pollen grains. The pollen grains are the male parts of the flower. Fertilised ovules
+                develop into the seeds from which new plants will grow. The fact that the ovules are protected inside flowers has contributed greatly to the success of flowering plants.
+            </div>
+            <form action="" class="contact">
+                <fieldset>
+                    <legend>Infomation</legend>
+                    <label for="txtName">Name:</label>
+                    <br>
+                    <input type="text" name="txtName" id="txtName" placeholder="Your name" required oninvalid="this.setCustomValidity('Vui lòng điền vào trường này.')" oninput="this.setCustomValidity('')">
+                    <br>
+                    <label for="txtEmail">Email:</label>
+                    <br>
+                    <input type="email" name="txtEmail" id="txtEmail" placeholder="Your email" required oninvalid="this.setCustomValidity('Vui lòng điền vào trường này.')" oninput="this.setCustomValidity('')">
+                    <br>
+                    <label for="gender">Gender:</label>
+                    <br>
+                    <label for="male">Male:</label>
+                    <input type="radio" name="gender" value="male" id="male">
+                    <label for="female">Female:</label>
+                    <input type="radio" name="gender" value="female" id="female">
+                    <br>
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </fieldset>
+            </form>
+        </section>
+        <aside>
+            <div class="images">
+                <p>flower</p>
+                <hr>
+                <a href="#"><img src="../hinh/flower.jpg" alt="flower.jpg"></a>
+                <p>Flower Conference</p>
+                <hr>
+                <a href="#"><img src="../hinh/conference.jpg" alt="flower_conference.jpg"></a>
+                <p>Flower Pot</p>
+                <hr>
+                <a href="#"><img src="../hinh/pot.jpg" alt="flower_pot.jpg"></a>
+            </div>
+        </aside>
+        <footer>
+            <p>21086351 - Huỳnh Kim Thành</p>
+            <p>DHKTPM18B - Khoa Công Nghệ Thông Tin</p>
+        </footer>
+    </div>
+</body>
+
+</html>

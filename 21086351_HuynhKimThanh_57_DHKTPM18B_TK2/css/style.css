@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background-image: url(../hinh/background.png);
+}
+
+.wrapper {
+    width: 960px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 6px;
+}
+
+nav {
+    width: 100%;
+    height: 50px;
+    background-color: #fdc8e9;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+nav ul li {
+    position: absolute;
+    width: 120px;
+    height: 100%;
+    line-height: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(88, 19, 105);
+    font-weight: bold;
+}
+
+nav ul li:nth-child(1) {
+    left: 0;
+}
+
+nav ul li:nth-child(2) {
+    left: 130px;
+}
+
+nav ul li:nth-child(3) {
+    left: 260px;
+}
+
+nav ul li:nth-child(4) {
+    left: 390px;
+}
+
+nav ul li:nth-child(5) {
+    width: 300px;
+    right: 0;
+    height: 100%;
+    line-height: 50px;
+    color: red;
+}
+
+nav ul li:nth-child(5) form input[type="text"] {
+    height: 24px;
+}
+
+nav ul li:nth-child(5) form input[type="submit"] {
+    background-color: rgb(67, 126, 236);
+    color: white;
+    border: none;
+    outline: none;
+    width: 24px;
+    height: 24px;
+}
+
+nav ul li a:hover {
+    color: blue;
+}
+
+header {
+    width: 100%;
+    height: 100%;
+}
+
+header img {
+    width: 100%;
+}
+
+section {
+    width: 70%;
+    float: left;
+    background-image: linear-gradient(to right, #9de7ff, white, #9de7ff);
+    padding: 10px;
+    padding-right: 40px;
+}
+
+section h2 {
+    color: red;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+section .content,
+section form {
+    width: 50%;
+    float: left;
+    padding: 10px;
+}
+
+section .content {
+    padding-left: 0;
+    text-align: justify;
+    text-indent: 40px;
+    font-size: 19px;
+}
+
+section form {
+    width: calc(50% - 20px);
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+section form fieldset {
+    border-radius: 10px;
+    padding: 10px;
+}
+
+section form input[type="text"],
+section form input[type="email"] {
+    width: 94%;
+    height: 36px;
+    border-radius: 10px;
+    margin-top: 3px;
+    margin-bottom: 10px;
+    box-shadow: 3px 5px 4px gray;
+}
+
+section form input[type="submit"],
+section form input[type="reset"] {
+    width: 70px;
+    height: 30px;
+    font-size: 20px;
+    margin: 20px;
+    box-shadow: 3px 5px 4px gray;
+}
+
+aside {
+    width: 30%;
+    float: right;
+    background-color: rgb(196, 195, 195);
+    padding: 4px;
+}
+
+hr {
+    border: 2px dotted black;
+    margin-bottom: 10px;
+}
+
+.images {
+    width: 100%;
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 0;
+}
+
+.images p {
+    text-align: center;
+    font-size: 27px;
+    color: red;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 3px 4px 3px rgba(255, 0, 0, 0.3);
+}
+
+.images img {
+    width: 100%;
+    box-shadow: 4px 6px 8px gray;
+}
+
+.images a:nth-child(6) img {
+    transform: rotate(20deg);
+}
+
+footer {
+    margin-top: 4px;
+    height: 50px;
+    clear: both;
+    width: 100%;
+    background-color: rgb(178, 184, 106);
+}
+
+footer p {
+    font-size: 20px;
+    line-height: 50px;
+    display: inline-block;
+}
+
+footer p:nth-child(2) {
+    float: right;
+}
