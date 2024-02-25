@@ -86,11 +86,12 @@ nav ul li a:hover {
 
 header {
     width: 100%;
-    height: 100%;
+    height: 150px;
 }
 
 header img {
     width: 100%;
+    height: 100%;
 }
 
 section {
@@ -186,7 +187,7 @@ hr {
     box-shadow: 4px 6px 8px gray;
 }
 
-.images a:nth-child(6) img {
+.images a:hover img {
     transform: rotate(20deg);
 }
 
